@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8">
 <style>
 
@@ -29,13 +31,20 @@
 }
 
 </style>
+</head>
+<header>
+    <button onclick="expandAll()">Expand All</button>
+    <button onclick="collapseAll()">Collapse All</button>
+</header>
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
     width = 960+1800 - margin.right - margin.left,
-    height = 800 - margin.top - margin.bottom;
+    height = 1100 - margin.top - margin.bottom,
+    rectHeight = 50;
+
 
 var i = 0,
     duration = 750,
@@ -47,13 +56,61 @@ var tree = d3.layout.tree()
 var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
+var rectSvg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", rectHeight + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+function dateRects() {
+    var current = [
+      {t:"Current", n:0}, 
+      {t: "Subjects", n:1},
+      {t: "11/12/17", n:2},
+      {t: "11/19/17", n:3},
+      {t: "11/22/17", n:4},
+      {t: "12/03/17", n:5},
+      {t: "12/10/17", n:6},
+      {t: "12/17/17", n:7},
+      {t: "12/24/17", n:8},
+      {t: "12/31/17", n:9},
+      {t: "01/07/18", n:10},
+      {t: "01/14/18", n:11},
+      {t: "01/21/18", n:12},
+      {t: "01/28/18", n:13}
+    ];
+    var arr = [];
+
+  var rects = rectSvg.selectAll("g.rectangles")
+      .data(current);
+   
+  var rectEnter = rects.enter().append("g")
+          .attr("class", "rectangles");
+      
+  rectEnter.append("rect")
+      .attr("x", function(d) { return ((d.n-1)*180+95) })
+      .attr("y", 0)
+      .attr("width", 175)
+      .attr("height", 25);
+    
+  rectEnter.append("text")
+      .text(function(d) { return d.t; })
+      .attr("x", function(d) { return ((d.n-1)*180+95) })
+      .attr("y", 0)
+      .style("fill", "black")
+      .style("font-weight", "bold")
+      .attr("dx", "4em")
+      .attr("dy", "1.10em");
+}
+  
+dateRects();
+
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var rootHeight = 0;
 d3.json("goals.json", function(error, goals) {
   if (error) throw error;
 
@@ -81,12 +138,6 @@ function update(source) {
   var nodes = tree.nodes(root).reverse(),
       links = tree.links(nodes);
 
-  nodes.forEach(function(d) {
-    if (d.depth > rootHeight) {
-      rootHeight = d.depth
-    }
-  });
-
   // Normalize for fixed-depth.
   nodes.forEach(function(d) { d.y = d.depth * 180; });
 
@@ -106,10 +157,11 @@ function update(source) {
 
   nodeEnter.append("text")
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-      .attr("dy", "-1em")
+      .attr("dy", "1em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
+      .style("fill-opacity", 1e-6)
+      .style("font-size", "1em");
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
@@ -180,52 +232,26 @@ function click(d) {
   update(d);
 }
 
-function dateRects(height) {
-    var current = [
-      {t:"Current", n:0}, 
-      {t: "Subjects", n:1},
-      {t: "11/12/17", n:2},
-      {t: "11/19/17", n:3},
-      {t: "11/22/17", n:4},
-      {t: "12/03/17", n:5},
-      {t: "12/10/17", n:6},
-      {t: "12/17/17", n:7},
-      {t: "12/24/17", n:8},
-      {t: "12/31/17", n:9},
-      {t: "01/07/18", n:10},
-      {t: "01/14/18", n:11},
-      {t: "01/21/18", n:12},
-      {t: "01/28/18", n:13}
-    ];
-    var arr = [];
-
-  var rects = svg.selectAll("g.rectangles")
-      .data(current);
-   
-  var rectEnter = rects.enter().append("g")
-          .attr("class", "rectangles");
-      
-  rectEnter.append("rect")
-      .attr("x", function(d) { return ((d.n-1)*180+95) })
-      .attr("y", 0)
-      .attr("width", 175)
-      .attr("height", 50);
-    
-  rectEnter.append("text")
-      .text(function(d) { return d.t; })
-      .attr("x", function(d) { return ((d.n-1)*180+95) })
-      .attr("y", 0)
-      .style("fill", "black")
-      .attr("dx", "4em")
-      .attr("dy", "2em");
-  
-    
-  var dates = svg.selectAll("p")
-        
-      
+function expand(d){   
+    var children = (d.children)?d.children:d._children;
+    if (d._children) {        
+        d.children = d._children;
+        d._children = null;       
+    }
+    if(children)
+      children.forEach(expand);
 }
-  
-dateRects(rootHeight);
 
+function expandAll(){
+    expand(root); 
+    update(root);
+}
 
+function collapseAll(){
+    root.children.forEach(collapse);
+    collapse(root);
+    update(root);
+}
 </script>
+</body>
+</html>

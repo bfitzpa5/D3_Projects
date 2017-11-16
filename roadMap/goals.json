@@ -16,7 +16,12 @@
 	   {
 	    "name": "Sections 5.4, 8.1, 8.2",
 	    "children": [
-	     { "name": "Final 12/15", "size": 1983 }
+	     {
+	      "name": "Review",
+	      "children": [
+	       { "name": "Final: Weds 12/20 @ 1:10", "size": 1983 }
+	      ]
+	     }
 	    ]
 	   }
 	  ]
@@ -31,127 +36,151 @@
    "name": "COMS 3134",
    "children": [
     {
-     "name": "Homework 4",
+     "name": "Heaps and Sorting",
      "children": [
-      {"name": "Chapter 5 Reading", "size": 1983},
-      {"name": "Chapter 6 Reading", "size": 1983},
-      {"name": "Chapter 7 Reading", "size": 1983}
-     ]
-    },
-    {
-     "name": "Final",
-     "children": [
-      {"name": "Study Guide", "size": 1983}
+      {
+       "name": "Sorting",
+       "children": [
+        { "name": "Graphs", "size": 1983 },
+	{
+	 "name": "Homework 4 Due Mon 11/27",
+         "children": [
+          {
+           "name": "NP-Completeness",
+           "children": [
+	    {
+	     "name": "Review",
+	     "children": [
+              { "name": "Final 1: Weds 12/20 @ 4:10", "size": 1983},
+	      { "name": "Final 2: Mon 12/18 @ 4:10", "size": 1983 }
+	     ]
+	    }
+           ]
+          }
+	 ]
+	}
+       ]
+      }
      ]
     }
    ]
   },
   {
-   "name": "STAT 4240",
+   "name": "STAT 4204",
    "children": [
     {
-     "name": "Final",
+     "name": "Chapter 9",
      "children": [
-      {"name": "Section 9.1 Reading", "size": 1983},
-      {"name": "Section 9.2 Reading", "size": 1983},
-      {"name": "Section 9.3 Reading", "size": 1983}
+      {
+       "name": "Chapters 9 and 10",
+       "children": [
+        {
+         "name": "Chapters 10 and 12",
+         "children": [
+          { "name": "Chapter 12 and review", "size": 1983 },
+          {
+	   "name": "Final 1: Thurs 12/7 @ TBD", 
+	   "children": [
+	    { "name": "Final 2: Tues 12/19 @ 7:10", "size": 1983 }
+	    ]
+	  }
+         ]
+        }
+       ]
+      }
      ]
     }
    ]
   },
   {
    "name": "Metis Review",
-   "children": [
+    "children": [
+    {"name": "Pandas", "size": 1983 }, 
+    {"name": "Github" , "size": 1983 },
     {
-     "name": "Week 1",
+     "name": "MatPlotLib",
      "children": [
-      {"name": "Github", "size": 1983},
-      {"name": "Pandas", "size": 1983},
-      {"name": "Matplotlib", "size": 1983}
+      { "name": "Webscraping", "size": 1983 },
+      { "name": "Pickling", "size": 1983 }, 
+      { "name": "Regression", "size": 1983 }, 
+      {
+       "name": "Cross-Validation",
+       "children": [
+        {"name": "Regularization", "size": 1983 },
+	{ 
+	 "name": "Supervised Learning Algorithms",
+         "children": [
+          {"name": "NLP", "size": 1983 },
+	  {"name": "APIs", "size": 1983 },
+	  {"name": "KMeans", "size": 1983 },
+	  {"name": "PCA", "size": 1983 },    
+	  {
+	   "name": "LDA",
+           "children": [
+            { "name": "Word2Vec", "size": 1983 },
+            { "name": "Review", "size": 1983 },
+            { "name": "Recommenders", "size": 1983 },
+            { "name": "Spark", "size": 1983 },
+            { "name": "Hadoop", "size": 1983 },
+            { "name": "Hive", "size": 1983 }
+           ]
+          }
+	 ]
+	}
+       ]
+      }
      ]
-    },
+    }
+   ]  
+  },
+  {
+   "name": "AWS Certification",
+    "children": [
     {
-     "name": "Week 2",
+     "name": "EC2 First Half",
      "children": [
-      {"name": "Webscraping", "size": 1983},
-      {"name": "Pickling", "size": 1983},
-      {"name": "Linear Regression", "size": 1983},
-      {"name": "Cross-Validation", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 3",
-     "children": [
-      {"name": "Regularization", "size": 1983},
-      {"name": "Null Hypothesis", "size": 1983},
-      {"name": "Bayes", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 4",
-     "children": [
-      {"name": "Supervised Learning", "size": 1983},
-      {"name": "K-Nearest Neighbors", "size": 1983},
-      {"name": "Logistic Regression", "size": 1983},
-      {"name": "Amazon AWS", "size": 1983},
-      {"name": "Postgre SQL", "size": 1983},
-      {"name": "Support Vector Machine", "size": 1983},
-      {"name": "Decision Trees", "size": 1983},
-      {"name": "Random Forests", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 5",
-     "children": [
-      {"name": "JavaScript", "size": 1983},
-      {"name": "D3", "size": 1983},
-      {"name": "Flask", "size": 1983},
-      {"name": "Naive Bayes Classification", "size": 1983},
-      {"name": "SGD", "size": 1983},
-      {"name": "Deep Learning", "size": 1983},
-      {"name": "Neural Networks", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 6",
-     "children": [
-      {"name": "MLE", "size": 1983},
-      {"name": "GLM", "size": 1983},
-      {"name": "Poisson", "size": 1983},
-      {"name": "NLP", "size": 1983},
-      {"name": "APIs", "size": 1983},
-      {"name": "Mongo", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 7",
-     "children": [
-      {"name": "Kmeans", "size": 1983},
-      {"name": "PCA", "size": 1983},
-      {"name": "LDA", "size": 1983},
-      {"name": "Word2Vec", "size": 1983},
-      {"name": "More Clustering", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 8",
-     "children": [
-      {"name": "Reviews", "size": 1983},
-      {"name": "Recommenders", "size": 1983},
-      {"name": "More Deep Learning", "size": 1983}
-     ]
-    },
-    {
-     "name": "Week 10",
-     "children": [
-      {"name": "Docker", "size": 1983},
-      {"name": "Hadoop", "size": 1983},
-      {"name": "Hive", "size": 1983},
-      {"name": "Spark", "size": 1983}
+      {
+       "name": "EC2 Second Half",
+       "children": [
+        {
+         "name": "Route 53",
+         "children": [
+          {
+           "name": "Databases on AWS",
+           "children": [
+            { 
+	     "name": "VPC",
+	     "children": [
+              { "name": "Application Services", "size": 1983 },
+	      {
+	       "name": "Creating Word Press",
+	       "children": [
+                { "name": "Preparing for Exam", "size": 1983 },
+	        {
+		 "name": "Well-Architeched Framework",
+		 "children": [
+                  { "name": "Additional Exam Tips", "size": 1983 },
+		  {
+		   "name": "Review",
+		   "children": [
+		    { "name": "Take Exam!", "size": 1983 }
+		   ]
+		  }
+		 ]
+		}
+	       ]
+	      }
+	     ]
+	    }
+           ]
+          }
+	 ]
+	}
+       ]
+      }
      ]
     }
    ]
-  },
-  {"name": "AWS Certification", "size": 1983}
+  }
  ]
 }
