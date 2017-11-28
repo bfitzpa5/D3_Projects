@@ -72,17 +72,22 @@
      "name": "Chapter 9",
      "children": [
       {
-       "name": "Chapters 9 and 10",
+       "name": "Chapters 10",
        "children": [
         {
-         "name": "Chapters 10 and 12",
+         "name": "Chapters 12",
          "children": [
-          { "name": "Chapter 12 and review", "size": 1983 },
+          { "name": "Review", "size": 1983 },
           {
 	   "name": "Final 1: Thurs 12/7 @ TBD", 
 	   "children": [
-	    { "name": "Final 2: Tues 12/19 @ 7:10", "size": 1983 }
-	    ]
+	    {
+	     "name": "Review",
+	     "children": [
+	      { "name": "Final 2: Tues 12/19 @ 7:10", "size": 1983 }
+	     ]
+	    }
+	   ]
 	  }
          ]
         }
@@ -137,29 +142,27 @@
    "name": "AWS Certification",
     "children": [
     {
-     "name": "EC2 First Half",
+     "name": "",
      "children": [
       {
-       "name": "EC2 Second Half",
+       "name": "",
        "children": [
         {
-         "name": "Route 53",
+         "name": "",
          "children": [
           {
-           "name": "Databases on AWS",
+           "name": "",
            "children": [
             { 
-	     "name": "VPC",
+	     "name": "",
 	     "children": [
-              { "name": "Application Services", "size": 1983 },
 	      {
-	       "name": "Creating Word Press",
+	       "name": "",
 	       "children": [
-                { "name": "Preparing for Exam", "size": 1983 },
 	        {
-		 "name": "Well-Architeched Framework",
+		 "name": "Sections 5-8",
 		 "children": [
-                  { "name": "Additional Exam Tips", "size": 1983 },
+                  { "name": "Sections 9-14", "size": 1983 },
 		  {
 		   "name": "Review",
 		   "children": [
