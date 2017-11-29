@@ -10,23 +10,25 @@
 
 .node circle {
   fill: #fff;
-  stroke: steelblue;
+  stroke: #763626;
   stroke-width: 1.5px;
 }
 
 .node text {
   font: 10px sans-serif;
+  color: #2A3132;
+  font-weight: bold;
 }
 
 .link {
   fill: none;
-  stroke: #ccc;
+  stroke: LightSteelBlue;
   stroke-width: 1.5px;
 }
 
 .rectangles {
-        fill: paleturquoise;
-        stoke: midnightblue;
+        fill: #07575B;
+        stoke: #336B87;
         stroke-width: 3;
 }
 
@@ -36,7 +38,7 @@
     <button onclick="expandAll()">Expand All</button>
     <button onclick="collapseAll()">Collapse All</button>
 </header>
-<body>
+<body bgcolor="#90AFC5">
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -64,7 +66,7 @@ var rectSvg = d3.select("body").append("svg")
 
 function dateRects() {
     var current = [
-      {t:"Current", n:0}, 
+      {t:"Root", n:0}, 
       {t: "Subjects", n:1},
       {t: "11/12/17", n:2},
       {t: "11/19/17", n:3},
@@ -74,10 +76,7 @@ function dateRects() {
       {t: "12/17/17", n:7},
       {t: "12/24/17", n:8},
       {t: "12/31/17", n:9},
-      {t: "01/07/18", n:10},
-      {t: "01/14/18", n:11},
-      {t: "01/21/18", n:12},
-      {t: "01/28/18", n:13}
+      {t: "01/07/18", n:10}
     ];
     var arr = [];
 
@@ -89,15 +88,16 @@ function dateRects() {
       
   rectEnter.append("rect")
       .attr("x", function(d) { return ((d.n-1)*180+95) })
-      .attr("y", 0)
+      .attr("y", 50)
       .attr("width", 175)
       .attr("height", 25);
     
   rectEnter.append("text")
       .text(function(d) { return d.t; })
       .attr("x", function(d) { return ((d.n-1)*180+95) })
-      .attr("y", 0)
-      .style("fill", "black")
+      .attr("y", 50)
+      .style("fill", "WhiteSmoke")
+      .style("font","16px sans-serif")
       .style("font-weight", "bold")
       .attr("dx", "4em")
       .attr("dy", "1.10em");
