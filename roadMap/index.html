@@ -28,8 +28,12 @@
 
 .rectangles {
         fill: #07575B;
-        stoke: #336B87;
-        stroke-width: 3;
+}
+
+.dateRect {
+        fill: none;
+        stroke: black;
+        stroke: #763626;
 }
 
 </style>
@@ -42,7 +46,7 @@
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var margin = {top: 20, right: 120, bottom: 20, left: 120},
+var margin = {top: 60, right: 120, bottom: 60, left: 240},
     width = 960+1800 - margin.right - margin.left,
     height = 1100 - margin.top - margin.bottom,
     rectHeight = 50;
@@ -110,6 +114,14 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var currentDate = 3;
+var currentDateRect = svg.append("rect")
+      .attr("class", "dateRect")
+      .attr("x", currentDate*180+95)
+      .attr("y", margin.top)
+      .attr("width", 175)
+      .attr("height", height-margin.top-margin.bottom);
 
 d3.json("goals.json", function(error, goals) {
   if (error) throw error;
