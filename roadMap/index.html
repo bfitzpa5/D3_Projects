@@ -74,7 +74,7 @@ function dateRects() {
       {t: "Subjects", n:1},
       {t: "11/12/17", n:2},
       {t: "11/19/17", n:3},
-      {t: "11/22/17", n:4},
+      {t: "11/26/17", n:4},
       {t: "12/03/17", n:5},
       {t: "12/10/17", n:6},
       {t: "12/17/17", n:7},
@@ -119,9 +119,9 @@ var currentDate = 3;
 var currentDateRect = svg.append("rect")
       .attr("class", "dateRect")
       .attr("x", currentDate*180+95)
-      .attr("y", margin.top)
+      .attr("y", 10)
       .attr("width", 175)
-      .attr("height", height-margin.top-margin.bottom);
+      .attr("height", height-margin.bottom);
 
 d3.json("goals.json", function(error, goals) {
   if (error) throw error;
