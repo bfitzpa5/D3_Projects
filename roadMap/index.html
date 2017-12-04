@@ -46,6 +46,8 @@
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
+d3.select("body").selectAll("svg").remove();
+
 var margin = {top: 60, right: 120, bottom: 60, left: 240},
     width = 960+1800 - margin.right - margin.left,
     height = 1100 - margin.top - margin.bottom,
@@ -72,15 +74,15 @@ function dateRects() {
     var current = [
       {t:"Root", n:0}, 
       {t: "Subjects", n:1},
-      {t: "11/12/17", n:2},
-      {t: "11/19/17", n:3},
-      {t: "11/26/17", n:4},
-      {t: "12/03/17", n:5},
-      {t: "12/10/17", n:6},
-      {t: "12/17/17", n:7},
-      {t: "12/24/17", n:8},
-      {t: "12/31/17", n:9},
-      {t: "01/07/18", n:10}
+      {t: "11/13/17", n:2},
+      {t: "11/20/17", n:3},
+      {t: "11/27/17", n:4},
+      {t: "12/04/17", n:5},
+      {t: "12/11/17", n:6},
+      {t: "12/18/17", n:7},
+      {t: "12/25/17", n:8},
+      {t: "01/01/17", n:9},
+      {t: "01/08/18", n:10}
     ];
     var arr = [];
 
@@ -115,7 +117,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var currentDate = 3;
+var currentDate = 4;
 var currentDateRect = svg.append("rect")
       .attr("class", "dateRect")
       .attr("x", currentDate*180+95)
