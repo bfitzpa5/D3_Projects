@@ -1,189 +1,271 @@
 {
- "name": "Calendar",
- "children": [
-  {
-   "name": "MATH 2500",
-   "children": [
+  "name": "Calendar",
+  "children": [
     {
-     "name": "Sections 3.1, 3.3",
-     "children": [
-       {
-        "name": "Sections 3.5, 3.8",
-	"children": [
-	 {
-	  "name": "Sections 3.5, 3.9, 3.6",
-	  "children": [
-	   {
-	    "name": "Sections 5.4, 8.1, 8.2",
-	    "children": [
-	     {
-	      "name": "Review",
-	      "children": [
-	       { "name": "Final: Weds 12/20 @ 1:10", "size": 1983 }
-	      ]
-	     }
-	    ]
-	   }
-	  ]
-	 }
-	]
-       }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "COMS 3134",
-   "children": [
-    {
-     "name": "Heaps and Sorting",
-     "children": [
-      {
-       "name": "Sorting",
-       "children": [
-        { "name": "Graphs", "size": 1983 },
-	{
-	 "name": "Homework 4 Due Mon 11/27",
-         "children": [
-          {
-           "name": "NP-Completeness",
-           "children": [
-	    {
-	     "name": "Review",
-	     "children": [
-              { "name": "Final 1: Weds 12/20 @ 4:10", "size": 1983},
-	      { "name": "Final 2: Mon 12/18 @ 4:10", "size": 1983 }
-	     ]
-	    }
-           ]
-          }
-	 ]
-	}
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "STAT 4204",
-   "children": [
-    {
-     "name": "Chapter 9",
-     "children": [
-      {
-       "name": "Chapters 10",
-       "children": [
+      "name": "MATH 2500",
+      "children": [
         {
-         "name": "Chapters 12",
-         "children": [
-          { "name": "Review", "size": 1983 },
-          {
-	   "name": "Final 1: Thurs 12/7 @ TBD", 
-	   "children": [
-	    {
-	     "name": "Review",
-	     "children": [
-	      { "name": "Final 2: Tues 12/19 @ 7:10", "size": 1983 }
-	     ]
-	    }
-	   ]
-	  }
-         ]
+          "name": "Sections 3.1, 3.3",
+          "children": [
+            {
+              "name": "Sections 3.5, 3.8",
+              "children": [
+                {
+                  "name": "Sections 3.5, 3.9, 3.6",
+                  "children": [
+                    {
+                      "name": "Sections 5.4, 8.1, 8.2",
+                      "children": [
+                        {
+                          "name": "Review",
+                          "children": [
+                            {
+                              "name": "Final: Weds 12/20 @ 1:10",
+                              "size": 1983
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Metis Review",
-    "children": [
-    {"name": "Pandas", "size": 1983 }, 
-    {"name": "Github" , "size": 1983 },
+      ]
+    },
     {
-     "name": "MatPlotLib",
-     "children": [
-      { "name": "Webscraping", "size": 1983 },
-      { "name": "Pickling", "size": 1983 }, 
-      { "name": "Regression", "size": 1983 }, 
-      {
-       "name": "Cross-Validation",
-       "children": [
-        {"name": "Regularization", "size": 1983 },
-	{ 
-	 "name": "Supervised Learning Algorithms",
-         "children": [
-          {"name": "NLP", "size": 1983 },
-	  {"name": "APIs", "size": 1983 },
-	  {"name": "KMeans", "size": 1983 },
-	  {"name": "PCA", "size": 1983 },    
-	  {
-	   "name": "LDA",
-           "children": [
-            { "name": "Word2Vec", "size": 1983 },
-            { "name": "Review", "size": 1983 },
-            { "name": "Recommenders", "size": 1983 },
-            { "name": "Spark", "size": 1983 },
-            { "name": "Hadoop", "size": 1983 },
-            { "name": "Hive", "size": 1983 }
-           ]
-          }
-	 ]
-	}
-       ]
-      }
-     ]
-    }
-   ]  
-  },
-  {
-   "name": "AWS Certification",
-    "children": [
-    {
-     "name": "",
-     "children": [
-      {
-       "name": "",
-       "children": [
+      "name": "COMS 3134",
+      "children": [
         {
-         "name": "",
-         "children": [
-          {
-           "name": "",
-           "children": [
-            { 
-	     "name": "",
-	     "children": [
-	      {
-	       "name": "",
-	       "children": [
-	        {
-		 "name": "Sections 5-8",
-		 "children": [
-                  { "name": "Sections 9-14", "size": 1983 },
-		  {
-		   "name": "Review",
-		   "children": [
-		    { "name": "Take Exam!", "size": 1983 }
-		   ]
-		  }
-		 ]
-		}
-	       ]
-	      }
-	     ]
-	    }
-           ]
-          }
-	 ]
-	}
-       ]
-      }
-     ]
+          "name": "Heaps and Sorting",
+          "children": [
+            {
+              "name": "Sorting",
+              "children": [
+                {
+                  "name": "Graphs",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "HW 5 Due Mon 12/11",
+                          "size": 1983
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "HW 4 Due Mon 11/27",
+                  "children": [
+                    {
+                      "name": "NP-Completeness",
+                      "children": [
+                        {
+                          "name": "Review",
+                          "children": [
+                            {
+                              "name": "Final 1: Weds 12/20 @ 4:10",
+                              "size": 1983
+                            },
+                            {
+                              "name": "Final 2: Mon 12/18 @ 4:10",
+                              "size": 1983
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "STAT 4204",
+      "children": [
+        {
+          "name": "Chapter 9",
+          "children": [
+            {
+              "name": "Chapters 10",
+              "children": [
+                {
+                  "name": "Chapters 12",
+                  "children": [
+                    {
+                      "name": "Review",
+                      "size": 1983
+                    },
+                    {
+                      "name": "Final 1: Thurs 12/7 @ TBD",
+                      "children": [
+                        {
+                          "name": "Review",
+                          "children": [
+                            {
+                              "name": "Final 2: Tues 12/19 @ 7:10",
+                              "size": 1983
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metis Review",
+      "children": [
+        {
+          "name": "Pandas",
+          "size": 1983
+        },
+        {
+          "name": "Github",
+          "size": 1983
+        },
+        {
+          "name": "MatPlotLib",
+          "children": [
+            {
+              "name": "Webscraping",
+              "size": 1983
+            },
+            {
+              "name": "Pickling",
+              "size": 1983
+            },
+            {
+              "name": "Regression",
+              "size": 1983
+            },
+            {
+              "name": "Cross-Validation",
+              "children": [
+                {
+                  "name": "Regularization",
+                  "size": 1983
+                },
+                {
+                  "name": "Supervised Learning Algorithms",
+                  "children": [
+                    {
+                      "name": "NLP",
+                      "size": 1983
+                    },
+                    {
+                      "name": "APIs",
+                      "size": 1983
+                    },
+                    {
+                      "name": "KMeans",
+                      "size": 1983
+                    },
+                    {
+                      "name": "PCA",
+                      "size": 1983
+                    },
+                    {
+                      "name": "LDA",
+                      "children": [
+                        {
+                          "name": "Word2Vec",
+                          "size": 1983
+                        },
+                        {
+                          "name": "Review",
+                          "size": 1983
+                        },
+                        {
+                          "name": "Recommenders",
+                          "size": 1983
+                        },
+                        {
+                          "name": "Spark",
+                          "size": 1983
+                        },
+                        {
+                          "name": "Hadoop",
+                          "size": 1983
+                        },
+                        {
+                          "name": "Hive",
+                          "size": 1983
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AWS Certification",
+      "children": [
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "name": "",
+                      "children": [
+                        {
+                          "name": "",
+                          "children": [
+                            {
+                              "name": "",
+                              "children": [
+                                {
+                                  "name": "Sections 5-8",
+                                  "children": [
+                                    {
+                                      "name": "Sections 9-14",
+                                      "size": 1983
+                                    },
+                                    {
+                                      "name": "Review",
+                                      "children": [
+                                        {
+                                          "name": "Take Exam!",
+                                          "size": 1983
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
