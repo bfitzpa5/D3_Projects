@@ -104,22 +104,8 @@
                   "name": "Chapters 12",
                   "children": [
                     {
-                      "name": "Review",
+                      "name": "Final: Thurs 12/7 @ 6:10",
                       "size": 1983
-                    },
-                    {
-                      "name": "Final 1: Thurs 12/7 @ TBD",
-                      "children": [
-                        {
-                          "name": "Review",
-                          "children": [
-                            {
-                              "name": "Final 2: Tues 12/19 @ 7:10",
-                              "size": 1983
-                            }
-                          ]
-                        }
-                      ]
                     }
                   ]
                 }
