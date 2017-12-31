@@ -2,109 +2,51 @@
   "name": "Calendar",
   "children": [
     {
-      "name": "MATH 2500",
+      "name": "Career",
       "children": [
         {
-          "name": "Sections 3.1, 3.3",
-          "children": [
-            {
-              "name": "Sections 3.5, 3.8",
-              "children": [
-                {
-                  "name": "Sections 3.5, 3.9, 3.6",
-                  "children": [
-                    {
-                      "name": "Sections 5.4, 8.1, 8.2",
-                      "children": [
-                        {
-                          "name": "Review",
-                          "children": [
-                            {
-                              "name": "Final: Weds 12/20 @ 1:10",
-                              "size": 1983
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "COMS 3134",
-      "children": [
+          "name": "Company targest list",
+          "size": 1983
+        },
         {
-          "name": "Heaps and Sorting",
+          "name": "Employ profile",
+          "size": 1983
+        },
+        {
+          "name": "Interview Cake",
+          "size": 1983
+        },
+        {
+          "name": "Draft cover letter",
+          "size": 1983
+        },
+        {
+          "name": "Reconnect with Jen",
+          "size": 1983
+        },
+        {
+          "name": "Apply to 10 companies",
           "children": [
             {
-              "name": "Sorting",
+              "name": "Skilled Interview",
+              "size": 1983
+            },
+            {
+              "name": "Apply to 10 companies",
+              "size": 1983
+            },
+            {
+              "name": "Get first interview",
               "children": [
                 {
-                  "name": "Graphs",
-                  "children": [
-                    {
-                      "name": "",
-                      "children": [
-                        {
-                          "name": "HW 5 Due Mon 12/11",
-                          "size": 1983
-                        },
-                        {
-                          "name": "HW 6 Due Wed 12/13",
-                          "size": 1983
-                        }
-                      ]
-                    }
-                  ]
+                  "name": "Apply to 10 companies",
+                  "size": 1983
                 },
                 {
-                  "name": "HW 4 Due Mon 11/27",
+                  "name": "Keep interviewing",
                   "children": [
                     {
-                      "name": "NP-Completeness",
-                      "children": [
-                        {
-                          "name": "Review",
-                          "children": [
-                            {
-                              "name": "Final 1: Weds 12/20 @ 4:10",
-                              "size": 1983
-                            },
-                            {
-                              "name": "Final 2: Mon 12/18 @ 4:10",
-                              "size": 1983
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "STAT 4204",
-      "children": [
-        {
-          "name": "Chapter 9",
-          "children": [
-            {
-              "name": "Chapters 10",
-              "children": [
-                {
-                  "name": "Chapters 12",
-                  "children": [
-                    {
-                      "name": "Final: Thurs 12/7 @ 6:10",
+                      "name": "Find job",
                       "size": 1983
                     }
                   ]
@@ -208,48 +150,18 @@
       "name": "AWS Certification",
       "children": [
         {
-          "name": "",
+          "name": "Sections 5-8",
           "children": [
             {
-              "name": "",
+              "name": "Sections 9-14",
+              "size": 1983
+            },
+            {
+              "name": "Review",
               "children": [
                 {
-                  "name": "",
-                  "children": [
-                    {
-                      "name": "",
-                      "children": [
-                        {
-                          "name": "",
-                          "children": [
-                            {
-                              "name": "",
-                              "children": [
-                                {
-                                  "name": "Sections 5-8",
-                                  "children": [
-                                    {
-                                      "name": "Sections 9-14",
-                                      "size": 1983
-                                    },
-                                    {
-                                      "name": "Review",
-                                      "children": [
-                                        {
-                                          "name": "Take Exam!",
-                                          "size": 1983
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "name": "Take Exam!",
+                  "size": 1983
                 }
               ]
             }
