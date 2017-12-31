@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -74,15 +74,11 @@ function dateRects() {
     var current = [
       {t:"Root", n:0}, 
       {t: "Subjects", n:1},
-      {t: "11/13/17", n:2},
-      {t: "11/20/17", n:3},
-      {t: "11/27/17", n:4},
-      {t: "12/04/17", n:5},
-      {t: "12/11/17", n:6},
-      {t: "12/18/17", n:7},
-      {t: "12/25/17", n:8},
-      {t: "01/01/17", n:9},
-      {t: "01/08/18", n:10}
+      {t: "01/01/18", n:2},
+      {t: "01/08/18", n:3},
+      {t: "01/14/18", n:4},
+      {t: "01/22/18", n:5},
+      {t: "01/29/18", n:6}
     ];
     var arr = [];
 
@@ -117,7 +113,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var currentDate = 5;
+var currentDate = 1;
 var currentDateRect = svg.append("rect")
       .attr("class", "dateRect")
       .attr("x", currentDate*180+95)
@@ -170,9 +166,9 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-      .attr("dy", "1em")
-      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .attr("x", function(d) { return d.children || d._children ? 0 : -5; })
+      .attr("dy", "1.5em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "middle" : "start"; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6)
       .style("font-size", "1em");
