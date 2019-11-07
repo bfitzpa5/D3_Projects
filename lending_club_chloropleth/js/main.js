@@ -3,7 +3,7 @@
 var width = 960;
 var height = 500;
 
-var lowColor = '#f9f9f9'
+var lowColor = '#2abc89'
 var highColor = '#bc2a66'
 
 // D3 Projection
