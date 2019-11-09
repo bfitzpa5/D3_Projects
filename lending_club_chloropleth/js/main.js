@@ -15,7 +15,7 @@ var path = d3.geoPath() // path generator that will convert GeoJSON to SVG paths
   .projection(projection); // tell path generator to use albersUsa projection
 
 //Create SVG element and append map to the SVG
-var svg = d3.select("body")
+var svg = d3.select("#map-chart-area")
   .append("svg")
   .attr("width", width)
   .attr("height", height);
