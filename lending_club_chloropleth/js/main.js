@@ -1,4 +1,3 @@
-
 //Width and height of map
 var width = 960;
 var height = 500;
@@ -25,7 +24,7 @@ var svg = d3.select("body")
 d3.csv("data/statesdata.csv", function(data) {
 	var dataArray = [];
 	for (var d = 0; d < data.length; d++) {
-		dataArray.push(parseFloat(data[d].value))
+		dataArray.push(parseFloat(data[d].default_rate));
 	}
 	var minVal = d3.min(dataArray)
 	var maxVal = d3.max(dataArray)
@@ -41,7 +40,7 @@ d3.csv("data/statesdata.csv", function(data) {
       var dataState = data[i].state;
 
       // Grab data value
-      var dataValue = data[i].value;
+      var dataValue = data[i].default_rate;
 
       // Find the corresponding state inside the GeoJSON
       for (var j = 0; j < json.features.length; j++) {
@@ -50,7 +49,7 @@ d3.csv("data/statesdata.csv", function(data) {
         if (dataState == jsonState) {
 
           // Copy the data value into the JSON
-          json.features[j].properties.value = dataValue;
+          json.features[j].properties.default_rate = dataValue;
 
           // Stop looking through the JSON
           break;
@@ -66,7 +65,7 @@ d3.csv("data/statesdata.csv", function(data) {
       .attr("d", path)
       .style("stroke", "#fff")
       .style("stroke-width", "1")
-      .style("fill", function(d) { return ramp(d.properties.value) });
+      .style("fill", function(d) { return ramp(d.properties.default_rate) });
 
 		// add a legend
 		var w = 140, h = 300;
